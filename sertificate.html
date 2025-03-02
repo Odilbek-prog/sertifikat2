@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sertifikat</title>
+    <meta name="viewport" content="width=550px" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://ilmhubuz.github.io/static/images/logo/favicon-16x16.png"
+    />
+    <link rel="stylesheet" href="sertificate.css" />
+  </head>
+  <body>
+    <button
+      class="btn"
+      onclick="downloadPDF()"
+      style="
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+      "
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="22"
+        height="22"
+        fill="currentColor"
+        class="bi bi-cloud-download"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M4.406 1.342A5.53 5.53 0 0 1 8 0c2.69 0 4.923 2 5.166 4.579C14.758 4.804 16 6.137 16 7.773 16 9.569 14.502 11 12.687 11H10a.5.5 0 0 1 0-1h2.688C13.979 10 15 8.988 15 7.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 2.825 10.328 1 8 1a4.53 4.53 0 0 0-2.941 1.1c-.757.652-1.153 1.438-1.153 2.055v.448l-.445.049C2.064 4.805 1 5.952 1 7.318 1 8.785 2.23 10 3.781 10H6a.5.5 0 0 1 0 1H3.781C1.708 11 0 9.366 0 7.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383"
+        />
+        <path
+          d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708z"
+        />
+      </svg>
+      pdf yuklash
+    </button>
+
+    <div class="card" id="card">
+      <div class="card__top">
+        <div class="card__cambridge">
+          <img
+            src="./img/cambridge.png"
+            class="card__bridge"
+            alt="CambridgeUniversity"
+          />
+          <h1 class="card__mark">98</h1>
+        </div>
+        <div class="card__university">
+          <h2 class="card__title">Ilmhub Junior</h2>
+          <h2 class="card__subtitle">Starters</h2>
+        </div>
+      </div>
+      <div class="card__center">
+        <div class="card__desc">
+          <p class="card__name">GULASAL</p>
+          <p class="card__name">took YLE Starters</p>
+          <p class="card__name">in SEPTEMBER 2024</p>
+          <p class="card__name">at ILMHUB Namangan</p>
+        </div>
+        <p class="card__detail">and was awarded the following:</p>
+        <div class="card__values">
+          <div class="card__value">
+            <p class="card__text">Reading and Writing</p>
+            <img src="./img/logo.png" alt="" class="card__logo" />
+            <img src="./img/logo.png" alt="" class="card__logo" />
+            <img src="./img/logo.png" alt="" class="card__logo" />
+            <img src="./img/logo.png" alt="" class="card__logo" />
+            <img src="./img/logo.png" alt="" class="card__logo" />
+          </div>
+          <div class="card__value">
+            Listening
+            <img src="./img/logo.png" alt="" class="card__logo" />
+            <img src="./img/logo.png" alt="" class="card__logo" />
+            <img src="./img/logo.png" alt="" class="card__logo" />
+            <img src="./img/logo.png" alt="" class="card__logo" />
+            <img src="./img/logo.png" alt="" class="card__logo" />
+          </div>
+          <div class="card__value">
+            Speaking
+            <img src="./img/logo.png" alt="" class="card__logo" />
+            <img src="./img/logo.png" alt="" class="card__logo" />
+            <img src="./img/logo.png" alt="" class="card__logo" />
+            <img src="./img/logo.png" alt="" class="card__logo" />
+            <img src="./img/logo.png" alt="" class="card__logo" />
+          </div>
+        </div>
+      </div>
+      <div class="card__bottom">
+        <div class="card__logo1">
+          <img src="./img/davronsign.png" alt="" class="card__sign" />
+          <img src="./img/stamp.png" alt="" class="card__stamp" />
+        </div>
+        <img src="./img/logo2.png" alt="" class="card__logo2" />
+        <img src="./img/logo3.png" alt="" class="card__logo3" />
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas-pro@1.5.8/dist/html2canvas-pro.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"
+    ></script>
+    <script src="https://ilmhubuz.github.io/static/js/upskilling-certificate.min.js"></script>
+  </body>
+</html>
